@@ -1,0 +1,236 @@
+
+/* 
+   1. GENERAL STYLING
+ */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* 2. HEADER */
+
+.header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #dbeafe;
+}
+
+
+/* 3. CARD DESIGN */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    color: #1e40af;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* 4. PERSONAL INFORMATION */
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.detail {
+    background-color: #f9fafb;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.detail strong {
+    color: #374151;
+    margin-right: 5px;
+}
+
+
+/* 5. SKILLS */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+/* 6. CALCULATOR FORM */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+
+/* 7. CALCULATOR BUTTON */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* 8. CALCULATION MESSAGES */
+
+.message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+
+/* 9. DEBUGGING SECTION */
+
+details {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+pre {
+    background-color: #111827;
+    color: #d1fae5;
+    padding: 15px;
+    border-radius: 7px;
+    overflow-x: auto;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+/* 10. FOOTER */
+
+.footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* 11. RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
